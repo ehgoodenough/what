@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ehgoodenough/gbic2017"
+    "url": "https://github.com/ehgoodenough/what"
   },
   "scripts": {
     "build": "codeglue --stage=PRODUCTION",
