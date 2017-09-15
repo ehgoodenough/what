@@ -1,0 +1,9 @@
+* {
+    cursor: default;
+    user-select: none;
+    image-rendering: pixelated;
+}
+
+body {
+    background-color: #111;
+}
