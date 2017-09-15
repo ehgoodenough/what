@@ -15,8 +15,6 @@ class Game extends Pixi.Container {
     constructor() {
         super()
         this.addChild(new Dude())
-        this.addChild(new Dude())
-        this.addChild(new Dude())
     }
     update(delta) {
         this.children.forEach((child) => {
