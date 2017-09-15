@@ -1,5 +1,6 @@
 import * as Pixi from "pixi.js"
 import Keyb from "keyb"
+import {FRAME} from "scripts/Constants"
 
 Pixi.settings.SCALE_MODE = Pixi.SCALE_MODES.NEAREST
 var texture = Pixi.Texture.from(require("images/dude.png"))
@@ -14,8 +15,8 @@ export default class Dude extends Pixi.Sprite {
         this.anchor.x = 0.5
         this.anchor.y = 0.5
         
-        this.position.x = 640 / 2
-        this.position.y = 360 / 2
+        this.position.x = FRAME.WIDTH / 2
+        this.position.y = FRAME.HEIGHT / 2
         
         this.speed = {
             movement: 100, // per second
