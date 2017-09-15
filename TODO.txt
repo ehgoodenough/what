@@ -1,8 +1,0 @@
-# TODO #
-[x] git repo
-[x] moving square
-[x] eslint
-[ ] dev environment
-[ ] send an email to the gamedev-interest
-[ ] pull request flow
-[ ] ticket
