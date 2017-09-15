@@ -1,8 +1,8 @@
 # TODO #
-git repo
-dev environment
-moving square
-eslint; four spaces?
-send an email to the gamedev-interest
-pull request flow
-ticket
+[x] git repo
+[x] moving square
+[x] eslint
+[ ] dev environment
+[ ] send an email to the gamedev-interest
+[ ] pull request flow
+[ ] ticket
