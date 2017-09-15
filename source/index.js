@@ -1,5 +1,6 @@
 import * as Pixi from "pixi.js"
 import Yaafloop from "yaafloop"
+import Dude from "./scripts/Dude.js"
 
 const WIDTH = 640
 const HEIGHT = 360
@@ -10,10 +11,9 @@ var renderer = Pixi.autoDetectRenderer({
 
 document.getElementById("frame").appendChild(renderer.view)
 
-var texture = Pixi.Texture.from(require("./images/dude.png"))
-var sprite = new Pixi.Sprite(texture)
+var sprite = new Dude()
 
 var loop = new Yaafloop(function(delta) {
-    sprite.position.x += 1 * delta.f
+    sprite.update(delta)
     renderer.render(sprite)
 })
