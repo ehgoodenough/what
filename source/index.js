@@ -18,7 +18,7 @@ class Game extends Pixi.Container {
     }
     update(delta) {
         this.children.forEach((child) => {
-            if(child.update instanceof Function) {
+            if (child.update instanceof Function) {
                 child.update(delta)
             }
         })
