@@ -11,9 +11,25 @@ var renderer = Pixi.autoDetectRenderer({
 
 document.getElementById("frame").appendChild(renderer.view)
 
-var sprite = new Dude()
+class Game extends Pixi.Container {
+    constructor() {
+        super()
+        this.addChild(new Dude())
+        this.addChild(new Dude())
+        this.addChild(new Dude())
+    }
+    update(delta) {
+        this.children.forEach((child) => {
+            if(child.update instanceof Function) {
+                child.update(delta)
+            }
+        })
+    }
+}
+
+var game = new Game()
 
 var loop = new Yaafloop(function(delta) {
-    sprite.update(delta)
-    renderer.render(sprite)
+    game.update(delta)
+    renderer.render(game)
 })
