@@ -7,3 +7,33 @@
 body {
     background-color: #111;
 }
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+#frame {
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  
+  background-color: #444;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    #frame {
+        width: 177.778vh;
+        height: 100vh;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    #frame {
+        height: 56.25vw;
+        width: 100vw;
+    }
+}
