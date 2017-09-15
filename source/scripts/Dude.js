@@ -8,24 +8,24 @@ var texture = Pixi.Texture.from(require("images/dude.png"))
 export default class Dude extends Pixi.Sprite {
     constructor() {
         super(texture)
-        
+
         this.scale.x = 5
         this.scale.y = 5
-        
+
         this.anchor.x = 0.5
         this.anchor.y = 0.5
-        
+
         this.position.x = FRAME.WIDTH / 2
         this.position.y = FRAME.HEIGHT / 2
-        
+
         this.speed = {
             movement: 100, // per second
-            rotation: Math.PI / 16 // per second
+            rotation: Math.PI / 4 // per second
         }
     }
     update(delta) {
         this.rotation += this.speed.rotation * delta.s
-        
+
         if (Keyb.isDown("W")) {
             this.position.y -= this.speed.movement * delta.s
             this.tint = 0xFF0000
