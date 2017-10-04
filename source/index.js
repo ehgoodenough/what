@@ -1,9 +1,8 @@
-import * as Pixi from "pixi.js"
 import Yaafloop from "yaafloop"
 import Dude from "./scripts/Dude.js"
 import {FRAME} from "scripts/Constants"
 
-var renderer = Pixi.autoDetectRenderer({
+var renderer = PIXI.autoDetectRenderer({
     width: FRAME.WIDTH,
     height: FRAME.HEIGHT,
     transparent: true
@@ -11,7 +10,7 @@ var renderer = Pixi.autoDetectRenderer({
 
 document.getElementById("frame").appendChild(renderer.view)
 
-class Game extends Pixi.Container {
+class Game extends PIXI.Container {
     constructor() {
         super()
         this.addChild(new Dude())

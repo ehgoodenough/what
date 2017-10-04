@@ -1,11 +1,10 @@
-import * as Pixi from "pixi.js"
 import Keyb from "keyb"
 import {FRAME} from "scripts/Constants"
 
-Pixi.settings.SCALE_MODE = Pixi.SCALE_MODES.NEAREST
-var texture = Pixi.Texture.from(require("images/dude.png"))
+PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST
+var texture = PIXI.Texture.from(require("images/dude.png"))
 
-export default class Dude extends Pixi.Sprite {
+export default class Dude extends PIXI.Sprite {
     constructor() {
         super(texture)
 
